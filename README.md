@@ -1,6 +1,6 @@
 # Vuepress-plugin-valine
 
-> Support popluar comment plugins in Vuepress, sucn as Valine.
+> Support popluar comment plugins in Vuepress, such as Valine.
 
 ## Features
 
