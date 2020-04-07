@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     init () {
-      if (this.frontmatter.comment !== false && this.frontmatter.comments !== false) {
+      if (this.$page && this.$page.frontmatter && this.$page.frontmatter && this.$page.frontmatter.comment !== false && this.$page.frontmatter.comments !== false) {
         new this.Valine({
           el: "#" + this.uuid,
           // other config
