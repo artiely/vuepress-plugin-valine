@@ -38,22 +38,20 @@ export default {
   },
   methods: {
     init () {
-      if (this.$page && this.$page.frontmatter && this.$page.frontmatter && this.$page.frontmatter.comment !== false && this.$page.frontmatter.comments !== false) {
-        new this.Valine({
-          el: "#" + this.uuid,
-          // other config
-          placeholder: "來都來了不踩一下嗎？",
-          notify: true, // 邮件提醒!!!
-          // verify: true, // 验证码
-          // visitor: true,
-          avatar: "retro",
-          meta: ["nick", "mail"],
-          recordIP: true,
-          pageSize: 20,
-          path: this.$route.path,
-          ...COMMENT_OPTIONS
-        });
-      }
+      new this.Valine({
+        el: "#" + this.uuid,
+        // other config
+        placeholder: "來都來了不踩一下嗎？",
+        notify: true, // 邮件提醒!!!
+        // verify: true, // 验证码
+        // visitor: true,
+        avatar: "retro",
+        meta: ["nick", "mail"],
+        recordIP: true,
+        pageSize: 20,
+        path: this.$route.path,
+        ...COMMENT_OPTIONS
+      });
     }
   }
 };

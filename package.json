@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-valine",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Comment plugin in vuepress, such as Valine",
   "main": "index.js",
   "scripts": {

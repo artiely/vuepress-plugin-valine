@@ -48,16 +48,3 @@ module.exports = {
   ]
 }
 ```
-
-## How to hide page comment
-
-If you want to hide comment plugin in specified page, set `$frontmatter.comment` or `$frontmatter.comments` to `false`.
-
-For example:
-
-```yml
----
-comment: false 
-# comments: false 
----
-```
