@@ -46,9 +46,13 @@ export default {
         // verify: true, // 验证码
         // visitor: true,
         avatar: "retro",
+        visitor: true ,// 阅读量统计
         meta: ["nick", "mail"],
+        requiredFields:["nick", "mail"],
         recordIP: true,
+        enableQQ:true,
         pageSize: 20,
+        avatar:'wavatar',
         path: this.$route.path,
         ...COMMENT_OPTIONS
       });
